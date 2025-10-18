@@ -1,0 +1,38 @@
+create table Date_dimensionsssss(
+day_number int primary key,
+day_date datetime,
+week_number int,
+month_number int,
+year_number int);
+
+create table  customer_dimensionsssss(
+
+customer_id int primary key,
+customer_name varchar(20),
+customer_address varchar(20),
+other_details varchar(20));
+
+create table data_warehouse_factssss(
+fact_id int primary key,
+customer_id int,
+day_number int,
+geographic_area varchar(30),
+product_code int,
+fact_name varchar(30),
+fact_description varchar(30),
+fact_amount int,
+fact_count int,
+other_fact_details varchar(40));
+
+create table product_dimensionssss(
+product_code int primary key,
+product_name varchar(30),
+product_description varchar(30),
+other_product_details varchar(30));
+
+create table geographic_dimensionsssss(
+geographic_area varchar(30) primary key,
+region varchar(30),
+country varchar(30),
+other_region_details varchar(30),
+geographic_area_name varchar(30));
